@@ -1,0 +1,62 @@
+wass_stereo [info ] Loding configuration file /d1/lab/data/wass/AA_2015/2015-03-05_10-35-00_12Hz//config/stereo_config.txt
+wass_stereo [info ] Reconstructing "/scratch/lab/data/bernard/wass/AA_2015/2015-03-05_10-35-00_12Hz/output_stbv2/output13032/000001_wd/"
+load_data [info ] image 0 loaded, Size: 2456x2058
+load_data [info ] image 1 loaded, Size: 2456x2058
+load_data [info ] original size: 2456x2058
+load_data [info ]   scaled size: 736x617
+load_data [info ]         scale: 0.299674
+rectify [info ] rectifying...
+rectify [info ] Detected stereo setup:
+rectify [info ] CAM1 (L) ---------  CAM0 (R)
+rectify [info ] Rectifying via cv::stereoRectify
+rectify [info ] rectification map generated
+sgbm_dense_stereo [info ] Disparity offset: -160 px
+sgbm_dense_stereo [info ] computing dense disparity map... (may take a while)
+sgbm_dense_stereo [info ] applying dilate filter (2 steps)
+sgbm_dense_stereo [info ] applying erode filter (1 steps)
+sgbm_dense_stereo [info ] dense stereo completed successfully
+triangulate [info ] triangulating disparity map
+triangulate [info ] ... 15%
+triangulate [info ] ... 30%
+triangulate [info ] ... 45%
+triangulate [info ] ... 60%
+triangulate [info ] ... 75%
+triangulate [info ] ... 90%
+triangulate [info ] ... 100%
+triangulate [info ] 3732961 valid points found
+triangulate [info ] average reprojection error: 3.49077e-12 (px)
+compute_zgap [info ] computing 99th percentile
+cluster [info ] extracting connected-components
+cluster [info ] biggest component: 0 size: 3656113 (px)
+cluster [info ] estimating best fitting plane...
+ransac_find_plane [info ] 400 ransac rounds, 3520113 best inliers
+ransac_find_plane [info ] ransac plane coeffs: 0.0468622 0.881606 0.469653 -4.66609
+ransac_find_plane [info ] refining plane
+crop_plane [info ] number of points after plane cropping: 3520113
+refine_plane [info ] refinement inliers (after cropping): 3354088
+refine_plane [info ] computing weights/centroid...
+refine_plane [info ] creating covariance matrix
+refine_plane [info ] computing svd
+refine_plane [info ] estimated plane coeffs: 0.0454209 0.885495 0.462423 -4.64067
+crop_plane [info ] number of points after plane cropping: 3517822
+crop_plane [info ] exporting point cloud data
+save_as_xyz_compressed [info ] saving mesh as compressed xyz file...
+save_as_xyz_compressed [info ] Xrange: [-89.6631 ... 93.9871]
+save_as_xyz_compressed [info ] Yrange: [-191.826 ... -1.99169]
+save_as_xyz_compressed [info ] Zrange: [-1.49994 ... 0.986248]
+save_as_xyz_compressed [info ] total data size: 21.1071 Mb
+save_as_xyz_compressed [info ] +----------------------------+-------------------+
+save_as_xyz_compressed [info ] |   Task                     |   Time (seconds)  |
+save_as_xyz_compressed [info ] +----------------------------+-------------------+
+save_as_xyz_compressed [info ] |                 Data load  |          0.135286 |
+save_as_xyz_compressed [info ] |             Rectification  |          0.115902 |
+save_as_xyz_compressed [info ] |              Dense Stereo  |           17.8236 |
+save_as_xyz_compressed [info ] |             Triangulation  |           3.74178 |
+save_as_xyz_compressed [info ] |               Z-gap stats  |           1.23597 |
+save_as_xyz_compressed [info ] |           Outlier removal  |          0.454769 |
+save_as_xyz_compressed [info ] |             Plane fitting  |           4.41928 |
+save_as_xyz_compressed [info ] |          Plane refinement  |           2.27092 |
+save_as_xyz_compressed [info ] +----------------------------+-------------------+
+save_as_xyz_compressed [info ] |                     TOTAL  |           30.3688 |
+save_as_xyz_compressed [info ] +----------------------------+-------------------+
+save_as_xyz_compressed [info ] All done.
