@@ -1,1 +1,70 @@
-# WaveBreakingKinematics
+# Python Code for observing Wave-Breaking Kinematics: 
+[Bernard Akaawase](https://marinesciences.uconn.edu/person/bernard-akaawase/), [Leonel Romero](https://marinesciences.uconn.edu/person/leonel-romero/), and [Alvise Benetazzo](http://www.ismar.cnr.it/people/benetazzo-alvise?set_language=en&cl=en). Directional Breaking Kinematics Observations from Three-dimensional Stereo Reconstruction of Ocean Waves. A paper submitted to Geophysical Research Letters. 
+
+## Abstract 
+
+Short ocean surface waves are important for remote sensing, air-sea exchange, and underwater acoustics. The energy spectrum at scales much shorter than the dominant waves are azimuthally bimodal. However, widely used wave models fail to reproduce the bimodality of the short gravity waves. Recent studies have shown that an azimuthally narrow dissipation due to breaking can significantly improve model performance. Thus, highlighting the importance of the directional energy balance of wave models. We utilized stereo visible imagery to quantify the directional wave-breaking kinematics and compare them against the energy spectrum and different dissipation parameterizations and model solutions. The results show that wave-breaking is azimuthally unimodal and narrower than the bimodal energy spectrum, suggesting that wave-breaking dissipation combines with the nonlinear energy fluxes due to wave-wave interactions to yield enhanced bimodality. The findings are useful for constraining energy dissipation parameterizations for spectral wave models and improved understanding of air-sea fluxes.
+
+
+#### Correspondence 
+<bernard.akaawase@uconn.edu>
+
+
+## How to use the code
+
+Start by making a local copy of this repository by either downloading the zipped files or cloning with:
+
+``` 
+git clone https://github.com/akaawase-bernard/WaveBreakingKinematics.git
+```
+
+After cloning, the directory tree on your machine should look like this:
+```
+WaveBreakingKinematics/
+├── data
+│   ├── background_removed_undistorted_imgs
+│   ├── loc_output
+│   └── pivlab_data
+|
+├── code
+│   ├── auxiliary
+│   │    ├── detector.py
+|   |    ├── imgs_background_removal.py
+|   |    └── determine_brightness_threshold.ipynb
+│   │    
+│   │    
+│   └── breaking_kinematics_algorithm.ipynb
+│        
+│        
+└── figs
+```
+Next, navigate into the directory `cd ./WaveBreakingKinematics/` and create a virtual environment (optional). You can use python virtual environment [venv](https://docs.python.org/3/library/venv.html#creating-virtual-environments) or [conda](https://anaconda.org/) as demostrated below. The dependencies are listed in the WaveBreakingKinematics (`wbk.yml`)   
+```
+conda env create --file wbk.yml
+``` 
+then activate the environment with  
+```
+conda activate wbk
+```
+
+Before running the code, lets familiarize with the content. 
+1. The data needed to test our code is available in the ` data/` directory. The main output of this code, which is the $\Lambda(c)$ data is saved in the `data/loc_output/` folder.
+2. In the `figs/` you will find all the plots generated while running the code. Plots of each frame will be saved seperately. E.g., `figs/breakers_013030/`
+3. The demo of the wave breaking detection and kinematics calculation is given in this notebook `cd ./code/breaking_kinematics_algorithm.ipynb`. Ideally, before running this script, you ought to have prepared your images with the `imgs_background_removal.py` then determined the brightness threshold `determine_brightness_threshold.ipynb`. Both scripts are in the `./code/auxiliary/` directory. For testing this code, you do not need to bother, this has been done already.
+
+
+To reproduce our results you will need complete dataset:
+The raw stereo record used for analysis in our paper can be downloaded [here](https://data-dataref.ifremer.fr/stereo/AA_2015/2015-03-05_10-35-00_12Hz/). You will need only the [input](https://data-dataref.ifremer.fr/stereo/AA_2015/2015-03-05_10-35-00_12Hz/input/) and [config](https://data-dataref.ifremer.fr/stereo/AA_2015/2015-03-05_10-35-00_12Hz/config/) files. 
+
+Next, you will need to install [WASS](https://sites.google.com/unive.it/wass/software/wass/installing?authuser=0) software on your machine.
+You can follow these [instructions](https://sites.google.com/unive.it/wass/software/wass/getting-started?authuser=0) to run [WASS](https://sites.google.com/unive.it/wass/software/wass). 
+
+More details coming!!!!
+
+
+# How to cite this code
+
+If you wish to use the code from this repository, you may cite it as: 
+
+[....]. 
+
