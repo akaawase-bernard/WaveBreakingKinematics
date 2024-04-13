@@ -48,7 +48,8 @@ conda activate wbk
 Before running the code, lets familiarize with the content. 
 1. The data needed to test our code is available in the ` data/` directory. The main output of this code, which is the $\Lambda(c)$ data is saved in the `data/loc_output/` folder.
 2. In the `figs/` you will find all the plots generated while running the code. Plots of each frame will be saved seperately. E.g., `figs/breakers_013030/`
-3. The demo of the wave breaking detection and kinematics calculation is given in this notebook `cd ./code/breaking_kinematics_algorithm.ipynb`. Ideally, before running this script, you ought to have prepared your images with the `imgs_background_removal.py` ![](utils/brightness_thresh.png)
+3. The demo of the wave breaking detection and kinematics calculation is given in this notebook `cd ./code/breaking_kinematics_algorithm.ipynb`. Ideally, before running this script, you ought to have prepared your images with the `imgs_background_removal.py`
+![](utils/brightness_thrsh.png)
 
 
 then determined the brightness threshold `determine_brightness_threshold.ipynb`. Both scripts are in the `./code/auxiliary/` directory. For testing this code, you do not need to bother, this has been done already.
