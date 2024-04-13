@@ -62,10 +62,9 @@ Before running the code, lets familiarize with the content.
 
 The raw stereo record used for analysis in our paper can be downloaded [here](https://data-dataref.ifremer.fr/stereo/AA_2015/2015-03-05_10-35-00_12Hz/). You will need only the [input](https://data-dataref.ifremer.fr/stereo/AA_2015/2015-03-05_10-35-00_12Hz/input/) and [config](https://data-dataref.ifremer.fr/stereo/AA_2015/2015-03-05_10-35-00_12Hz/config/) files. 
 
-The 3D reconstrcion was done with [WASS](https://sites.google.com/unive.it/wass/software/wass), to get WASS running on your machine, kindly follow these [instructions](https://sites.google.com/unive.it/wass/software/wass/getting-started?authuser=0). 
+The 3D reconstruction of sea surface waves was carried out with [WASS](https://sites.google.com/unive.it/wass/software/wass), to get WASS running on your machine, kindly follow these [instructions](https://sites.google.com/unive.it/wass/software/wass/getting-started?authuser=0). 
 
-The translations were estimated with [PIVlab](https://pivlab.blogspot.com/).
-
+The horizontal translation of whitecaps was estimated with [PIVlab](https://pivlab.blogspot.com/).
 
 
 # How to cite this code
