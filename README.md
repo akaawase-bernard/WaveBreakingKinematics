@@ -5,11 +5,17 @@
 ## Abstract 
 Short ocean surface waves are important for remote sensing, air-sea exchange, and underwater acoustics. The energy spectrum at scales much shorter than the dominant waves are azimuthally bimodal. However, widely used wave models fail to reproduce the bimodality of the short gravity waves. Recent studies have shown that an azimuthally narrow dissipation due to breaking can significantly improve model performance. Thus, highlighting the importance of the directional energy balance of wave models. We utilized stereo visible imagery to quantify the directional wave-breaking kinematics and compare them against the energy spectrum and different dissipation parameterizations and model solutions. The results show that wave-breaking is azimuthally unimodal and narrower than the bimodal energy spectrum, suggesting that wave-breaking dissipation combines with the nonlinear energy fluxes due to wave-wave interactions to yield enhanced bimodality. The findings are useful for constraining energy dissipation parameterizations for spectral wave models and improved understanding of air-sea fluxes.
 
-#### Correspondence 
-<bernard.akaawase@uconn.edu>
 
 
-## How to use the code
+<p align="center" style="font-size: 44 px; color: red;"> ----> Here is an example <---- </p>
+
+<div align="center">
+    <img src="utils/breaker_example.png" width="350">
+</div>
+
+
+
+## How to use the code:
 
 Start by making a local copy of this repository by either downloading the zipped files or cloning with:
 
@@ -68,6 +74,9 @@ The raw stereo record used for analysis in our paper can be downloaded [here](ht
 The 3D reconstruction of sea surface waves was carried out with [WASS](https://sites.google.com/unive.it/wass/software/wass), to get WASS running on your machine, kindly follow these [instructions](https://sites.google.com/unive.it/wass/software/wass/getting-started?authuser=0). 
 
 The horizontal translation of whitecaps was estimated with [PIVlab](https://pivlab.blogspot.com/).
+
+##### Correspondence 
+<bernard.akaawase@uconn.edu>
 
 
 # How to cite this code
