@@ -1,4 +1,4 @@
-# The Wave-Breaking Kinematics code: 
+# The Wave-Breaking Kinematics code - $\Lambda(c)$ 
 
 [Bernard Akaawase](https://marinesciences.uconn.edu/person/bernard-akaawase/), [Leonel Romero](https://marinesciences.uconn.edu/person/leonel-romero/), and [Alvise Benetazzo](http://www.ismar.cnr.it/people/benetazzo-alvise?set_language=en&cl=en). Directional Breaking Kinematics Observations from Three-dimensional Stereo Reconstruction of Ocean Waves. A paper submitted to Geophysical Research Letters. 
 
@@ -56,7 +56,10 @@ Before running the code, lets familiarize with the content.
 </div>
 
 
- NB: To run the test cases, you don't need to bother yourself, we have provided the outputs of this required steps.
+ NB: To run the test cases, you don't need to bother yourself, we have provided the outputs of the required steps.
+
+## Run Test Case
+After activating your wbk environment, you can run the main script `./code/breaking_kinematics_algorithm.ipynb`. Ten (10) figures corresponding to the principal steps will be made and saved in the figs folder. Presently, the figs are occupied by our processing results.
 
 ## ... 
 
