@@ -51,6 +51,11 @@ then activate the environment with
 ```
 conda activate wbk
 ```
+Once the environment is done building, launch the jupyter notebook:
+```
+jupyter-lab
+```
+This will start a Jupyter notebook in a browser window.
 
 Before running the code, lets familiarize with the content. 
 1. The data needed to test our code is available in the ` data/` directory. The main output of this code, which is the $\Lambda(c)$ data is saved in the `data/loc_output/` folder.
