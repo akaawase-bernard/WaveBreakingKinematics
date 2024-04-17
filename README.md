@@ -1,8 +1,7 @@
 ## The Wave-Breaking Kinematics code - $\Lambda(c, \theta)$ 
 
 [Bernard Akaawase](https://marinesciences.uconn.edu/person/bernard-akaawase/), [Leonel Romero](https://marinesciences.uconn.edu/person/leonel-romero/), and [Alvise Benetazzo](http://www.ismar.cnr.it/people/benetazzo-alvise?set_language=en&cl=en). Directional Breaking Kinematics Observations from Three-dimensional Stereo Reconstruction of Ocean Waves. A paper submitted to Geophysical Research Letters. 
-### ...
-<p align="center" style="font-size: 44 px; color: red;"> ----> The output <---- </p>
+## <p align="center" style="font-size: 40 px; color: red;"> ----> OUTPUT <---- </p>
 
 <div align="center">
     <img src="utils/breaker_example.png" width="600">
