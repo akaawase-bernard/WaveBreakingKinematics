@@ -1,17 +1,15 @@
 ## The Wave-Breaking Kinematics code - $\Lambda(c, \theta)$ 
 
 [Bernard Akaawase](https://marinesciences.uconn.edu/person/bernard-akaawase/), [Leonel Romero](https://marinesciences.uconn.edu/person/leonel-romero/), and [Alvise Benetazzo](http://www.ismar.cnr.it/people/benetazzo-alvise?set_language=en&cl=en). Directional Breaking Kinematics Observations from Three-dimensional Stereo Reconstruction of Ocean Waves. A paper submitted to Geophysical Research Letters. 
+### ...
+<p align="center" style="font-size: 44 px; color: red;"> ----> The output <---- </p>
+
+<div align="center">
+    <img src="utils/breaker_example.png" width="600">
+</div>
 
 ## Abstract 
 Short ocean surface waves are important for remote sensing, air-sea exchange, and underwater acoustics. The energy spectrum at scales much shorter than the dominant waves are azimuthally bimodal. However, widely used wave models fail to reproduce the bimodality of the short gravity waves. Recent studies have shown that an azimuthally narrow dissipation due to breaking can significantly improve model performance. Thus, highlighting the importance of the directional energy balance of wave models. We utilized stereo visible imagery to quantify the directional wave-breaking kinematics and compare them against the energy spectrum and different dissipation parameterizations and model solutions. The results show that wave-breaking is azimuthally unimodal and narrower than the bimodal energy spectrum, suggesting that wave-breaking dissipation combines with the nonlinear energy fluxes due to wave-wave interactions to yield enhanced bimodality. The findings are useful for constraining energy dissipation parameterizations for spectral wave models and improved understanding of air-sea fluxes.
-
-
-
-<p align="center" style="font-size: 44 px; color: red;"> ----> Here is an example <---- </p>
-
-<div align="center">
-    <img src="utils/breaker_example.png" width="350">
-</div>
 
 
 
