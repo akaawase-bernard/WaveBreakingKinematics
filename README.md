@@ -62,7 +62,7 @@ Before running the code, lets familiarize with the content.
 For this dataset, this is what you should get!
 
 <div align="center">
-    <img src="utils/brightness_thrsh.png" width="400">
+    <img src="utils/brightness_thrsh.png" width="600">
 </div>
 
 
