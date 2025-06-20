@@ -1,0 +1,18 @@
+name: wbk
+channels:
+ - conda-forge
+dependencies:
+ - pip
+ - numpy
+ - scipy
+ - jupyterlab
+ - matplotlib
+ - pip:
+ - pytest
+ - ipython
+ - tqdm
+ - glob2
+ - scikit-image
+ - opencv
+ - colorama
+ - ipympl

@@ -1,0 +1,11 @@
+#rsync -avu /d2/lab/data/bernard/wass/AA_2015/2015-03-05_10-35-00_12Hz/output_xy/xy_images/data/ij2xy_mapping_data_000368.pkl ./data/ij2xy_mapping_data_000368.pkl 
+rsync -avu \
+  /d2/lab/data/bernard/wass/AA_2015/2015-03-05_10-35-00_12Hz/output_xy/xy_images/data/ij2xy_mapping_data_00036{6,7,8,9,0}.pkl \
+  ./ij2xy_mapping_data/
+
+rsync -avu /d2/lab/data/bernard/wass/AA_2015/2015-03-05_10-35-00_12Hz/data/AA201503MAIN_thresholds_from_pdf.csv ./AA201503MAIN_thresholds_from_pdf.csv
+rsync -avu \
+/d2/lab/data/bernard/wass/AA_2015/2015-03-05_10-35-00_12Hz/output_xy/matlab_optflow/Vx_data_00036{8,9,9,0,1,2,3}.csv \
+/d2/lab/data/bernard/wass/AA_2015/2015-03-05_10-35-00_12Hz/output_xy/matlab_optflow/Vy_data_00036{8,9,9,0,1,2,3}.csv \
+./optical_flow_data/
+
