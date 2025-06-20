@@ -1,7 +1,7 @@
 ## The Wave-Breaking Kinematics code - $\Lambda(c, \theta)$ 
 
-[Bernard Akaawase](https://marinesciences.uconn.edu/person/bernard-akaawase/), [Leonel Romero](https://marinesciences.uconn.edu/person/leonel-romero/), and [Alvise Benetazzo](http://www.ismar.cnr.it/people/benetazzo-alvise?set_language=en&cl=en). Directional Breaking Kinematics Observations from Three-dimensional Stereo Reconstruction of Ocean Waves. A paper submitted to Geophysical Research Letters. 
-## <p align="center" style="font-size: 40 px; color: red;"> ----> OUTPUT <---- </p>
+[Bernard Akaawase](https://marinesciences.uconn.edu/person/bernard-akaawase/), [Leonel Romero](https://marinesciences.uconn.edu/person/leonel-romero/), and [Alvise Benetazzo](http://www.ismar.cnr.it/people/benetazzo-alvise?set_language=en&cl=en). Observations of Wave-Breaking Direction and Energy Spread. - Geophysical Research Letters, 2025. 
+## <p align="center" style="font-size: 40 px; color: red;"> ----| OUTPUT |---- </p>
 
 <div align="center">
     <img src="utils/breaker_example.png" width="600">
@@ -27,9 +27,9 @@ After cloning, the directory tree on your machine should look like this:
 ```
 WaveBreakingKinematics/
 ├── data
-│   ├── background_removed_undistorted_imgs
+│   ├── ij2xy_mapping_data
 │   ├── loc_output
-│   └── pivlab_data
+│   └── optical_flow_data
 |
 ├── code
 │   ├── auxiliary
@@ -58,17 +58,16 @@ jupyter-lab
 This will start a Jupyter notebook in a browser window.
 
 Before running the code, lets familiarize with the content. 
-1. The data needed to test our code is available in the ` data/` directory. The main output of this code, which is the $\Lambda(c)$ data is saved in the `data/loc_output/` folder.
-2. In the `figs/` you will find all the plots generated while running the code. Plots of each frame will be saved seperately. E.g., `figs/breakers_013030/`
+1. The data needed to test the code is available in the ` data/` directory. The main output of this code, which is the $\Lambda(c)$ data is saved in the `data/loc_output/` folder.
+2. In the `figs/` you will find all the plots generated while running the code. About 10 figures are made per frame.
 3. The demo of the wave breaking detection and kinematics calculation is given in this notebook `cd ./code/breaking_kinematics_algorithm.ipynb`. Ideally, before running this script, you ought to have prepared the images with the `imgs_background_removal.py`script. Followed by the brightness thresholding `determine_brightness_threshold.ipynb`. Both scripts are in the `./code/auxiliary/` directory.
-For this dataset, this is what you should get!
-
+The results of the 3 datasets are given below.
 <div align="center">
     <img src="utils/brightness_thrsh.png" width="600">
 </div>
 
 
- NB: To run the test cases, you don't need to bother yourself, we have provided the outputs of the required steps.
+ NB: To run the test cases, we have provided the outputs of the required steps.
 
 ## Run Test Cases
 After activating your wbk environment, you can run the main script `./code/breaking_kinematics_algorithm.ipynb`. Ten (10) figures corresponding to the principal steps will be made and saved in the figs folder. Presently, the figs are occupied by our processing results.
