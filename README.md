@@ -78,7 +78,7 @@ The raw stereo record used for analysis in our paper can be downloaded [here](ht
 
 The 3D reconstruction of ocean surface waves was carried out with [WASS](https://sites.google.com/unive.it/wass/software/wass), to get WASS running on your machine, kindly follow these [instructions](https://sites.google.com/unive.it/wass/software/wass/getting-started?authuser=0). 
 
-The horizontal translation of whitecaps was estimated with [Optical Flow]([https://pivlab.blogspot.com](https://docs.opencv.org/3.4/d4/dee/tutorial_optical_flow.html)).
+The horizontal translation of whitecaps was estimated with [Optical Flow]([https://pivlab.blogspot.com](https://docs.opencv.org/3.4/d4/dee/tutorial_optical_flow.html)/).
 
 ##### Correspondence 
 <bernard.akaawase@uconn.edu>
