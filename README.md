@@ -84,9 +84,3 @@ The horizontal translation of whitecaps was estimated with [Optical Flow]([https
 <bernard.akaawase@uconn.edu>
 
 
-# How to cite this code
-
-If you wish to use the code from this repository, you may cite it as: 
-
-[....]. 
-
