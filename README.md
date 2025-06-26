@@ -83,4 +83,7 @@ The horizontal translation of whitecaps was estimated with [Optical Flow]([https
 ##### Correspondence 
 <bernard.akaawase@uconn.edu>
 
+Cite as: [![DOI](https://zenodo.org/badge/1005371069.svg)](https://doi.org/10.5281/zenodo.15749808)
+
+
 
