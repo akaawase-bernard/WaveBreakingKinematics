@@ -124,6 +124,55 @@ def compute_dl(theta, dx,dy):
             my_dls.append(hypothenus) 
     return my_dls
 
+def remove_background_brigthness(img, kernel_size = 400,left = 750, top = 350 , height = 1650,width = 1600,  plot_results=False):
+    ''' based on KM11'''
+
+    
+    
+    #kernel = cv.getStructuringElement(cv.MORPH_ELLIPSE, (kernel_size, kernel_size))
+    #kernel = io.morphology.diamond(300);
+    
+    kernel = io.morphology.diamond(kernel_size);
+    #kernel = kernel[100:500,100:500]
+    kernel = kernel[int(kernel_size/4):int(2*kernel_size  - kernel_size/4), int(kernel_size/4) : int(2*kernel_size - kernel_size/4)]
+    
+    background = cv.morphologyEx(img, cv.MORPH_OPEN, kernel)
+    background_cropped= background[top:top+height, left:left+width]
+    mean_background = np.nanmean(background_cropped)
+    
+    pixel_division = img.astype(float) / background.astype(float)
+    corrected_float0 =  pixel_division * mean_background
+    corrected_float = np.nan_to_num(corrected_float0, nan=0)
+    
+    corrected_clipped = np.clip(corrected_float, 0, 255)
+    corrected = np.round(corrected_clipped).astype(int)
+    
+    corrected[img==255] = 255
+    
+    if plot_results:
+        fig, axes = plt.subplots(2, 2, sharex=True, sharey=True)
+        img_plot = axes[0, 0].imshow(img, cmap='gray', vmin=0, vmax=255)
+        axes[0, 0].set_title('img')
+        cropped_img_plot = axes[0, 1].imshow(pixel_division, cmap='gray', vmin=0, vmax=255)
+        axes[0, 1].set_title('pixel_division')
+        background_plot = axes[1, 0].imshow(background, cmap='gray', vmin=0, vmax=255)
+        axes[1, 0].set_title('background')
+        #corrected_plot = axes[1, 1].imshow(corrected, cmap='gray', vmin=255, vmax=256)
+        corrected_plot = axes[1, 1].imshow(corrected, cmap='gray')
+
+        axes[1, 1].set_title('corrected')
+    
+        # Add colorbars to each subplot
+        fig.colorbar(img_plot, ax=axes[0, 0])
+        fig.colorbar(cropped_img_plot, ax=axes[0, 1])
+        fig.colorbar(background_plot, ax=axes[1, 0])
+        fig.colorbar(corrected_plot, ax=axes[1, 1])
+    
+        plt.tight_layout()
+        plt.show()
+   
+    return  corrected
+    
 def filterout_lowspeeds(CXo, CYo, inpo, jnpo, my_dls,slowspeed=1):
     """
     Filters out the very slow detected breaking that may not be trusted from visible cameras. Then constrains the breaking direction 
