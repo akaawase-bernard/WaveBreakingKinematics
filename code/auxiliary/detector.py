@@ -206,3 +206,16 @@ def save_loc_data(datapath, fname_savestats, C, n,aTOT,  **data_dict):
     print("    Cmean:          | {:.2f}".format(C_mean))
     print("    Cmedian:        | {:.2f}".format(C_median))
     print("--------------------+--------------------------")
+
+def triangle_smoothing_1d(data, kernel_size):
+    
+    # Ensure that kernel size is odd for symmetry
+    if kernel_size % 2 == 0:
+        raise ValueError("Kernel size must be odd for symmetry")
+
+    # Create a uniform triangular kernel
+    triangle_kernel = np.arange(1, kernel_size + 1)
+    triangle_kernel = triangle_kernel / np.sum(triangle_kernel)
+    
+    smoothed_data = np.convolve(data, triangle_kernel, mode='same')
+    return smoothed_data
